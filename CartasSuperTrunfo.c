@@ -131,7 +131,17 @@ int main() {
     printf("Super Poder: %d\n",
            carta1.superPoder > carta2.superPoder);
 
-    printf("1 para verdadeiro – Carta 1 vence – e 0 para falso – Carta 2 vence");
+    printf("1 para verdadeiro – Carta 1 vence – e 0 para falso – Carta 2 vence\n");
+
+
+ if ((carta1.populacao > carta2.populacao) && (carta1.pib > carta2.pib) && (carta1.pibPerCapita > carta2.pibPerCapita)){
+printf("CARTA 1 VENCEU !!!! \n carta1.populacao > carta2.populacao:%d\n - carta1.pib > carta2.pib:%d \n  carta1.pibPerCapita > carta2.pibPerCapita:|%d\n");
+ } else { printf("CARTA 2 VENCEU !!!! \n carta1.populacao > carta2.populacao:%d\n - carta1.pib > carta2.pib:%d \n  carta1.pibPerCapita > carta2.pibPerCapita:|%d\n");
+}
+
+
+
+
 
     return 0;
 }
